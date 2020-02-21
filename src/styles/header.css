@@ -1,0 +1,15 @@
+.header{
+    position: absolute;
+    width: 100%;
+}
+.header .nav-link.last{
+    padding-right: 0px !important;
+}
+.header .navbar{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+}
