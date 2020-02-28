@@ -1,8 +1,8 @@
 import React from 'react'
-import '../styles/footer.css'
+import './footer.css'
 const Footer    =   ()  =>  {
     return(
-        <section class="footer bg-dark text-white">
+        <section class="footer bg-blue c-yellow">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8">
@@ -11,10 +11,10 @@ const Footer    =   ()  =>  {
                         <div className="col-lg-4">
                             <div className="social">
                                 <ul className="list-group list-inline list-group-horizontal justify-content-end">
-                                    <li className="pr-3"><a href="#" className="text-white"><i className="fab fa-facebook"></i></a></li>
-                                    <li className="pr-3"><a href="#" className="text-white"><i className="fab fa-twitter"></i></a></li>
-                                    <li className="pr-3"><a href="#" className="text-white"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="#" className="text-white"><i className="fab fa-linkedin"></i></a></li>
+                                    <li className="pr-3"><a href="#" className="text-white"><i className="fab fa-facebook c-yellow"></i></a></li>
+                                    <li className="pr-3"><a href="#" className="text-white"><i className="fab fa-twitter c-yellow"></i></a></li>
+                                    <li className="pr-3"><a href="#" className="text-white"><i className="fab fa-instagram c-yellow"></i></a></li>
+                                    <li><a href="#" className="text-white"><i className="fab fa-linkedin c-yellow"></i></a></li>
                                 </ul>
                             </div>
                         </div>

@@ -1,36 +1,32 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import '../styles/header.css'
+import './header.css'
 const Header = () => {
     return(
-        <div className="header">
+        <div className="header sticky-top bg-yellow">
             <div className="container">
-            <nav class="navbar sticky-top navbar-expand-lg">
-            <a class="navbar-brand" href="#">
-                {/* <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""/> */}
-                Rahul
-            </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg">
+            <Link className="navbar-brand text-decoration-none" to="/">
+                {/* <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" className="d-inline-block align-top" alt=""/> */}
+                <h2>Rahul</h2>
+            </Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-                    <span class="navbar-text">
+                <div className="collapse navbar-collapse justify-content-end" id="navbarText">
+                    <span className="navbar-text">
                         <ul className="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Home</a>
+                            <li className="nav-item">
+                                <Link className="text-decoration-none"  to="/">Home</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                            <li className="nav-item">
+                                <Link className="text-decoration-none"  to="/about">About</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Skill</a>
+                            <li className="nav-item">
+                                <Link className="text-decoration-none"  to="/skill">Skill</Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link last" href="#">Contact</a>
+                            <li className="nav-item">
+                                <Link className="text-decoration-none last"to="/contact">Contact</Link>
                             </li>
                         </ul>
                     </span>
