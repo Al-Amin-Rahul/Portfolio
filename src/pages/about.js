@@ -26,17 +26,17 @@ class About extends Component{
                             <h2 className="c-blue bb-y">Education</h2> 
                             <div className="row pt-5">
                                 <div className="col-lg-4 text-center">
-                                    <div className="count c-blue"><h2>01</h2></div>
+                                    <div className="count c-blue"><h3 className="">01</h3></div>
                                     <div className="university "><p>Daffodil International University</p></div>
                                     <div className="year ">2016-2020</div>
                                 </div>
                                 <div className="col-lg-4 text-center">
-                                    <div className="count c-blue"><h2>02</h2></div>
+                                    <div className="count c-blue"><h3>02</h3></div>
                                     <div className="university"><p>Bonarpara Degree College</p></div>
                                     <div className="year">2014-2015</div>
                                 </div>
                                 <div className="col-lg-4 text-center">
-                                    <div className="count c-blue"><h2>03</h2></div>
+                                    <div className="count c-blue"><h3>03</h3></div>
                                     <div className="university"><p>Amar Desh Residential School</p></div>
                                     <div className="year">2012-2013</div>
                                 </div>
@@ -60,7 +60,7 @@ class About extends Component{
                     </section>
                     <section className="hobbies pt-5 pb-5">
                         <div className="container">
-                            <h2 className="c-blue bb-y">My Hobbies</h2> 
+                            <h2 className="c-blue bb-y">I Like To Do</h2> 
                             <div className="row pt-5">
                                 <div className="col-lg-3 text-center">
                                     <div className="icon"><i class="fas fa-code i-round"></i></div>
@@ -84,6 +84,30 @@ class About extends Component{
                                     <div className="icon"><i class="fas fa-gamepad i-round"></i></div>
                                     <div className="two-words">
                                         <p>Gaming</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <div className="icon"><i class="fas fa-book-reader i-round"></i></div>
+                                    <div className="two-words">
+                                        <p>Learning</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <div className="icon"><i class="fas fa-music i-round"></i></div>
+                                    <div className="two-words">
+                                        <p>Music</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <div className="icon"><i class="fas fa-globe-americas i-round"></i></div>
+                                    <div className="two-words">
+                                        <p>Explore</p>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 text-center">
+                                    <div className="icon"><i class="fas fa-bed i-round"></i></div>
+                                    <div className="two-words">
+                                        <p>Sleeping</p>
                                     </div>
                                 </div>
                             </div>

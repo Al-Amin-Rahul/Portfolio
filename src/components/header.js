@@ -1,9 +1,31 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { Component } from "react"
+import LoadingBar from 'react-top-loading-bar';
 import './header.css'
-const Header = () => {
-    return(
-        <div className="header sticky-top bg-yellow">
+class Header extends Component  {
+    state = {
+        loadingBarProgress: 0
+      };
+      add = value => {
+        this.setState({
+          loadingBarProgress: this.state.loadingBarProgress + value
+        });
+      };
+      onLoaderFinished = () => {
+        this.setState({ loadingBarProgress: 0 });
+      };
+      componentDidMount(){      
+        this.setState({ loadingBarProgress: 100 });
+      }
+    render(){
+        return(
+            <div className="header sticky-top bg-yellow">
+                <LoadingBar
+                progress={this.state.loadingBarProgress}
+                height={4}
+                color='red'
+                onLoaderFinished={() => this.onLoaderFinished()}
+                />
             <div className="container">
             <nav className="navbar navbar-expand-lg">
             <Link className="navbar-brand text-decoration-none" to="/">
@@ -34,7 +56,8 @@ const Header = () => {
                 </nav>
             </div>
         </div>
-    )
+        )
+    }
 }
 
 
